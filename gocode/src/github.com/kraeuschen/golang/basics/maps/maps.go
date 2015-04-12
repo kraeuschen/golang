@@ -19,6 +19,8 @@ func main() {
 	delete(m, "k2")
 	fmt.Println("map:", m)
 
+	// second return value: key was present
+	// ignore value by using _
 	_, prs := m["k2"]
 	fmt.Println("prs:", prs)
 
